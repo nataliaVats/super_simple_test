@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+group 'cloud.autotest'
+version '1.0'
+defaultTasks 'help'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task simple_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'simple_tests'
+        includeTags 'more_simple_tests'
+        excludeTags 'not_you'
+    }
+}
+
+dependencies {
+    compile 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    compile 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+}
+
+
