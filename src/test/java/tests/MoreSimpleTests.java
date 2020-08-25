@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("simple_tests")
+@Tag("more_simple_tests")
 public class MoreSimpleTests {
 
     @Test
