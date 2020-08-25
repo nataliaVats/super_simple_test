@@ -1,11 +1,12 @@
 package tests;
 
+
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("more_simple_tests")
+@Tag("simple_tests")
 public class MoreSimpleTests {
 
     @Test
@@ -13,7 +14,6 @@ public class MoreSimpleTests {
         assertEquals(3, 3);
     }
 
-    @Tag ("not_you")
     @Test
     void superNegativeTest() {
         assertEquals(2, 3);

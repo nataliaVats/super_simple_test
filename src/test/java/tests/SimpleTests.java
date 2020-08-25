@@ -1,12 +1,11 @@
 package tests;
 
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-@Tag("simple_tests")
+
 public class SimpleTests {
 
     @Test
@@ -18,7 +17,6 @@ public class SimpleTests {
     }
 
     @Test
-    @Tag("not_you")
     void negativeTest() {
         int a = 2;
         int b = 3;
