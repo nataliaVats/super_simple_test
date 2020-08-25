@@ -15,9 +15,10 @@ public class SimpleTests {
 
         assertEquals(a * b, 6);
     }
-
-    @Test
+    
     @Tag("not_you")
+    @Test
+    
     void negativeTest() {
         int a = 2;
         int b = 3;
