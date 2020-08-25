@@ -14,6 +14,7 @@ public class MoreSimpleTests {
         assertEquals(3, 3);
     }
 
+    @Tag("not_you")
     @Test
     void superNegativeTest() {
         assertEquals(2, 3);
