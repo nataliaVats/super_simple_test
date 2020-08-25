@@ -22,5 +22,7 @@ tasks.withType(JavaCompile) {
 task simple_tests(type: Test) {
     useJUnitPlatform {
         includeTags 'simple_tests'
+        includeTags 'asdadas_more_simple_tests'
+        excludeTags 'not_you'
     }
 }
